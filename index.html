@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mondrian Project</title>
+    <style>
+        /*
+    Write your CSS here
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+        section {
+            width: 748px;
+            height: 748px;
+            background-color: #000;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template: 414px 130px 155px / 315px 193px 148px;
+            grid-auto-columns: 77px;
+            grid-row: 20px;
+            grid-template-areas:
+                "s1 s2 s2 s2"
+                "s3 s4 s4 s5"
+                "s3 s4 s4 s6"
+                "s7 s8 s9 s10"
+            ;
+            gap: 5px;
+        }
+
+        .s1 {
+            background-color: #E72F24;
+            grid-area: s1;
+        }
+
+        .s2,
+        .s3,
+        .s4,
+        .s6,
+        .s7,
+        .s10 {
+            background-color: #ecdfdf;
+        }
+
+        .s2 {
+            grid-area: s2;
+        }
+
+        .s3 {
+            grid-area: s3;
+        }
+
+        .s4 {
+            grid-area: s4;
+        }
+
+        .s5 {
+            background-color: #004592;
+            grid-area: s5;
+        }
+
+        .s6 {
+            grid-area: s6;
+        }
+
+        .s7 {
+            grid-area: s7;
+        }
+
+        .s8 {
+            background-color: #F9D01E;
+            grid-area: s8;
+        }
+
+        .s9 {
+            background-color: #232629;
+            grid-area: s9;
+        }
+
+        .s10 {
+            grid-area: s10;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- Write your HTML here -->
+    <section>
+        <div class="container">
+            <div class="item s1"> </div>
+            <div class="item s2"> </div>
+            <div class="item s3"> </div>
+            <div class="item s4"> </div>
+            <div class="item s5"> </div>
+            <div class="item s6"> </div>
+            <div class="item s7"> </div>
+            <div class="item s8"> </div>
+            <div class="item s9"> </div>
+            <div class="item s10"> </div>
+        </div>
+    </section>
+</body>
+
+</html>
