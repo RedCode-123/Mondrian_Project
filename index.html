@@ -19,6 +19,13 @@
     HINT: Remember you can't change the properties of grid lines.
     But grid lines are transparent!
     */
+        body {
+            width: 100dvw;
+            height: 100dvh;
+            display: grid;
+            place-items: center;
+        }
+
         section {
             width: 748px;
             height: 748px;
@@ -36,7 +43,7 @@
                 "s1 s2 s2 s2"
                 "s3 s4 s4 s5"
                 "s3 s4 s4 s6"
-                "s7 s8 s9 s10"
+                "s7 s8 s9 s6"
             ;
             gap: 5px;
         }
@@ -50,8 +57,7 @@
         .s3,
         .s4,
         .s6,
-        .s7,
-        .s10 {
+        .s7 {
             background-color: #ecdfdf;
         }
 
@@ -91,10 +97,6 @@
             grid-area: s9;
         }
 
-        .s10 {
-            grid-area: s10;
-        }
-
     </style>
 </head>
 
@@ -111,7 +113,6 @@
             <div class="item s7"> </div>
             <div class="item s8"> </div>
             <div class="item s9"> </div>
-            <div class="item s10"> </div>
         </div>
     </section>
 </body>
